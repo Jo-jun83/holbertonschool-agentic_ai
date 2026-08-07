@@ -13,9 +13,7 @@ function Footer() {
                 <BrainCircuit className="h-4 w-4 text-white" />
               </div>
 
-              <span className="text-sm font-bold">
-                Agentic AI
-              </span>
+              <span className="text-sm font-bold">Agentic AI</span>
             </div>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-slate-500">
@@ -23,52 +21,50 @@ function Footer() {
             </p>
 
             <div className="mt-5 flex items-center gap-3">
-            <a
+              <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-            >
+              >
                 <i className="bi bi-instagram"></i>
-            </a>
+              </a>
 
-            <a
+              <a
                 href="https://www.tiktok.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
                 className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-            >
+              >
                 <i className="bi bi-tiktok"></i>
-            </a>
+              </a>
 
-            <a
+              <a
                 href="https://x.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X"
                 className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-            >
+              >
                 <i className="bi bi-twitter-x"></i>
-            </a>
+              </a>
 
-            <a
+              <a
                 href="https://www.youtube.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
                 className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-            >
+              >
                 <i className="bi bi-youtube"></i>
-            </a>
+              </a>
             </div>
           </div>
 
           <nav aria-label="Footer navigation">
-            <h3 className="text-sm font-semibold">
-              Navigation
-            </h3>
+            <h3 className="text-sm font-semibold">Navigation</h3>
 
             <ul className="mt-5 space-y-3 text-sm text-slate-500">
               <li>
@@ -104,9 +100,7 @@ function Footer() {
           </nav>
 
           <div>
-            <h3 className="text-sm font-semibold">
-              Holberton School
-            </h3>
+            <h3 className="text-sm font-semibold">Holberton School</h3>
 
             <ul className="mt-5 space-y-3 text-sm text-slate-500">
               <li>
@@ -156,9 +150,7 @@ function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold">
-              Curriculum
-            </h3>
+            <h3 className="text-sm font-semibold">Curriculum</h3>
 
             <ul className="mt-5 space-y-3 text-sm text-slate-500">
               <li>
@@ -187,13 +179,9 @@ function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-slate-900 pt-6 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-          <p>
-            © {currentYear} Jungling Jonas
-          </p>
+          <p>© {currentYear} Jungling Jonas</p>
 
-          <p>
-            Built for the Holberton School Front-end Frameworks curriculum.
-          </p>
+          <p>Built for the Holberton School Front-end Frameworks curriculum.</p>
         </div>
       </div>
     </footer>

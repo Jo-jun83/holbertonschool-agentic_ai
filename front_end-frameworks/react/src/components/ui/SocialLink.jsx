@@ -9,7 +9,7 @@ function SocialLink({ href, label, icon }) {
     >
       {icon ? icon : null}
     </a>
-  )
+  );
 }
 
 export default SocialLink;

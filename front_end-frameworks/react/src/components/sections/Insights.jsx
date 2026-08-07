@@ -25,7 +25,7 @@ function Insights() {
   return (
     <section
       id="insights-section"
-      className="relative overflow-hidden bg-slate-950 px-4 pb-20 pt-28 text-white sm:px-6 sm:pb-24 sm:pt-32"
+      className="relative overflow-hidden bg-slate-950 px-4 pt-28 pb-20 text-white sm:px-6 sm:pt-32 sm:pb-24"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
@@ -37,7 +37,7 @@ function Insights() {
             <Sparkles className="h-3 w-3" />
           </div>
 
-          <h2 className="mt-8 text-4xl font-black leading-tight tracking-tight sm:text-5xl">
+          <h2 className="mt-8 text-4xl leading-tight font-black tracking-tight sm:text-5xl">
             Explore Agentic AI
             <span className="block text-violet-300">
               Through real-world scenes
@@ -46,9 +46,7 @@ function Insights() {
         </div>
 
         {error && (
-          <p className="mt-8 text-center text-sm text-red-400">
-            {error}
-          </p>
+          <p className="mt-8 text-center text-sm text-red-400">{error}</p>
         )}
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

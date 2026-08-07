@@ -1,5 +1,5 @@
 function InsightCard({ index, category, title, description, image }) {
-  const isFirst = index === 0
+  const isFirst = index === 0;
 
   return (
     <article
@@ -23,9 +23,7 @@ function InsightCard({ index, category, title, description, image }) {
             {category}
           </span>
 
-          <h3 className="mt-3 text-lg font-semibold text-white">
-            {title}
-          </h3>
+          <h3 className="mt-3 text-lg font-semibold text-white">{title}</h3>
 
           <p className="mt-1 max-w-xl text-sm leading-5 text-slate-400">
             {description}
@@ -33,7 +31,7 @@ function InsightCard({ index, category, title, description, image }) {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
-export default InsightCard
+export default InsightCard;
