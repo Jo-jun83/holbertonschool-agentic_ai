@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import steps from "../data/steps";
+import steps from "../../data/steps";
 
 function About() {
   return (

@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroStats from "../data/heroStats";
+import heroStats from "../../data/heroStats";
+import StatCard from "../cards/StatCard";
 
 function Hero() {
   return (
@@ -46,18 +47,7 @@ function Hero() {
 
         <div className="mt-14 grid grid-cols-2 gap-8 md:grid-cols-4">
           {heroStats.map((stat) => (
-            <article
-              key={stat.label}
-              className="rounded-xl border border-slate-800 bg-slate-950 p-6 shadow-xl shadow-slate-950/40"
-            >
-              <p className="text-3xl font-black text-violet-300 sm:text-4xl">
-                {stat.value}
-              </p>
-
-              <p className="mt-2 text-xs text-slate-400 sm:text-sm">
-                {stat.label}
-              </p>
-            </article>
+            <StatCard key={stat.label} value={stat.value} label={stat.label} />
           ))}
         </div>
       </div>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
-import InsightCard from "../components/InsightCard";
+import InsightCard from "../cards/InsightCard";
 
-import { getInsights } from "../services/insightsService.js";
+import { getInsights } from "../../services/insightsService.js";
 
 function Insights() {
   const [insights, setInsights] = useState([]);

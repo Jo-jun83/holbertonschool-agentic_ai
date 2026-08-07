@@ -1,6 +1,6 @@
 import { Sparkles } from "lucide-react";
-import FeatureCard from "../components/FeatureCard";
-import features from "../data/features";
+import FeatureCard from "../cards/FeatureCard";
+import features from "../../data/features";
 
 function Features() {
   return (
