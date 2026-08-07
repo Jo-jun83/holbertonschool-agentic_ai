@@ -6,6 +6,7 @@ import About from './sections/About.jsx';
 import Features from './sections/Features.jsx';
 import Insights from './sections/Insights.jsx';
 import Contact from './sections/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Insights />
       <Contact />
       </main>
+
+      <Footer />
         
     </>
   )
