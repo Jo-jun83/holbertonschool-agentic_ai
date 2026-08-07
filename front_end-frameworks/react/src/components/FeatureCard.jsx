@@ -5,15 +5,11 @@ function FeatureCard({ icon: Icon, title, description }) {
         <Icon className="h-5 w-5" />
       </div>
 
-      <h3 className="mt-5 text-base font-semibold text-white">
-        {title}
-      </h3>
+      <h3 className="mt-5 text-base font-semibold text-white">{title}</h3>
 
-      <p className="mt-2 text-sm leading-6 text-slate-300">
-        {description}
-      </p>
+      <p className="mt-2 text-sm leading-6 text-slate-300">{description}</p>
     </article>
-  )
+  );
 }
 
-export default FeatureCard
+export default FeatureCard;

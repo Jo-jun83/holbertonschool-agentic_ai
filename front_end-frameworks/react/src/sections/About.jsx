@@ -1,12 +1,9 @@
-import { Sparkles } from 'lucide-react'
-import steps from '../data/steps'
+import { Sparkles } from "lucide-react";
+import steps from "../data/steps";
 
 function About() {
   return (
-    <section
-      id="about-section"
-      className="bg-black px-6 py-24 text-white"
-    >
+    <section id="about-section" className="bg-black px-6 py-24 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
@@ -17,11 +14,9 @@ function About() {
             <Sparkles className="h-3 w-3" />
           </div>
 
-          <h2 className="mt-8 text-4xl font-black leading-none tracking-tight md:text-5xl">
+          <h2 className="mt-8 text-4xl leading-none font-black tracking-tight md:text-5xl">
             AI that does more than answer
-            <span className="block text-violet-300">
-              It acts with purpose
-            </span>
+            <span className="block text-violet-300">It acts with purpose</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-slate-300 md:text-base">
@@ -43,8 +38,7 @@ function About() {
 
               <p className="mt-3 text-sm leading-6 text-slate-500">
                 Responds to direct instructions, generates content, answers
-                questions, or analyzes information within a limited
-                interaction.
+                questions, or analyzes information within a limited interaction.
               </p>
             </div>
 
@@ -65,7 +59,7 @@ function About() {
           <div className="relative">
             <div
               aria-hidden="true"
-              className="absolute bottom-5 left-5 top-5 w-px bg-violet-500/60"
+              className="absolute top-5 bottom-5 left-5 w-px bg-violet-500/60"
             />
 
             <ol className="space-y-8">
@@ -94,7 +88,7 @@ function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

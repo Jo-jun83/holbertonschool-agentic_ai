@@ -1,11 +1,11 @@
-import { ArrowRight, Sparkles } from 'lucide-react'
-import heroStats from '../data/heroStats'
+import { ArrowRight, Sparkles } from "lucide-react";
+import heroStats from "../data/heroStats";
 
 function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative overflow-hidden bg-slate-950 px-6 pb-24 pt-36 text-white"
+      className="relative overflow-hidden bg-slate-950 px-6 pt-36 pb-24 text-white"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(124,58,237,0.28),transparent_35%),radial-gradient(circle_at_right,rgba(37,99,235,0.18),transparent_30%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.12)_1px,transparent_1px)] bg-[size:72px_72px] opacity-30" />
@@ -17,11 +17,9 @@ function Hero() {
           <Sparkles className="h-3 w-3" />
         </div>
 
-        <h1 className="mx-auto mt-8 max-w-4xl text-5xl font-black leading-none tracking-tight md:text-7xl">
+        <h1 className="mx-auto mt-8 max-w-4xl text-5xl leading-none font-black tracking-tight md:text-7xl">
           Build smarter workflows
-          <span className="block text-violet-300">
-            with Agentic AI
-          </span>
+          <span className="block text-violet-300">with Agentic AI</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-slate-300 md:text-base">
@@ -64,7 +62,7 @@ function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

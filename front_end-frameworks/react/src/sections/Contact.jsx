@@ -19,9 +19,7 @@ function Contact() {
 
   const [formData, setFormData] = useState(initialForm);
   const [isSending, setIsSending] = useState(false);
-  const [feedback, setFeedback] = useState(
-    "Please fill all required fields."
-  );
+  const [feedback, setFeedback] = useState("Please fill all required fields.");
 
   const isNameValid = formData.fullName.trim().length >= 2;
 
@@ -30,10 +28,7 @@ function Contact() {
 
   const isMessageValid = formData.message.trim().length >= 10;
 
-  const isFormValid =
-    isNameValid &&
-    isEmailValid &&
-    isMessageValid;
+  const isFormValid = isNameValid && isEmailValid && isMessageValid;
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -98,11 +93,9 @@ function Contact() {
           <Sparkles className="h-3 w-3" />
         </div>
 
-        <h2 className="mx-auto mt-8 max-w-3xl text-4xl font-black leading-none tracking-tight md:text-5xl lg:text-6xl">
+        <h2 className="mx-auto mt-8 max-w-3xl text-4xl leading-none font-black tracking-tight md:text-5xl lg:text-6xl">
           Ready to Explore
-          <span className="block text-violet-300">
-            Agentic AI?
-          </span>
+          <span className="block text-violet-300">Agentic AI?</span>
         </h2>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -127,23 +120,19 @@ function Contact() {
         <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-6 text-slate-500 md:flex-row md:justify-center md:gap-10">
           <div className="flex items-center gap-3">
             <FolderInput className="h-4 w-4 shrink-0 text-violet-500" />
-            <p className="whitespace-nowrap text-sm">
-              Project-based learning
-            </p>
+            <p className="text-sm whitespace-nowrap">Project-based learning</p>
           </div>
 
           <div className="flex items-center gap-3">
             <Users className="h-4 w-4 shrink-0 text-violet-500" />
-            <p className="whitespace-nowrap text-sm">
+            <p className="text-sm whitespace-nowrap">
               Peer learning environment
             </p>
           </div>
 
           <div className="flex items-center gap-3">
             <WandSparkles className="h-4 w-4 shrink-0 text-violet-500" />
-            <p className="whitespace-nowrap text-sm">
-              AI-powered workflows
-            </p>
+            <p className="text-sm whitespace-nowrap">AI-powered workflows</p>
           </div>
         </div>
 
@@ -169,10 +158,7 @@ function Contact() {
               onChange={handleChange}
               autoComplete="off"
               placeholder="Your full name..."
-              className={getFieldClass(
-                isNameValid,
-                formData.fullName
-              )}
+              className={getFieldClass(isNameValid, formData.fullName)}
             />
           </div>
 
@@ -193,10 +179,7 @@ function Contact() {
               onChange={handleChange}
               autoComplete="off"
               placeholder="you@example.com"
-              className={getFieldClass(
-                isEmailValid,
-                formData.email
-              )}
+              className={getFieldClass(isEmailValid, formData.email)}
             />
           </div>
 
@@ -219,7 +202,7 @@ function Contact() {
               placeholder="Tell us about your project or learning goals!"
               className={`${getFieldClass(
                 isMessageValid,
-                formData.message
+                formData.message,
               )} resize-none`}
             />
           </div>
@@ -227,7 +210,7 @@ function Contact() {
           <button
             type="submit"
             disabled={!isFormValid || isSending}
-            className="mt-8 w-full rounded-md bg-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+            className="mt-8 w-full cursor-pointer rounded-md bg-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/30 transition hover:bg-violet-600 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {isSending ? "Sending..." : "Send message"}
           </button>
