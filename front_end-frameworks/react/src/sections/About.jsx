@@ -5,11 +5,11 @@ function About() {
   return (
     <section
       id="about-section"
-      className="bg-black px-4 py-24 text-white sm:px-6"
+      className="bg-black px-6 py-24 text-white"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-200">
+          <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
             <Sparkles className="h-3 w-3" />
 
             <span>What is Agentic AI?</span>
@@ -17,14 +17,14 @@ function About() {
             <Sparkles className="h-3 w-3" />
           </div>
 
-          <h2 className="mt-8 text-4xl font-black leading-tight tracking-tight sm:text-5xl">
+          <h2 className="mt-8 text-4xl font-black leading-none tracking-tight md:text-5xl">
             AI that does more than answer
             <span className="block text-violet-300">
               It acts with purpose
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-slate-300 md:text-base">
             Agentic AI refers to artificial intelligence systems designed to
             pursue goals, make decisions, use tools, and adapt their actions
             across multiple steps. Instead of only responding to a single
@@ -35,7 +35,7 @@ function About() {
         </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <article className="rounded-2xl border border-slate-800 bg-slate-950/80 p-6 shadow-xl shadow-black/30">
+          <article className="rounded-3xl border border-slate-800 bg-slate-950 p-8 shadow-xl shadow-slate-950/40">
             <div>
               <h3 className="text-lg font-semibold text-white">
                 Traditional AI

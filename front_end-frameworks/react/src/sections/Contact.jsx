@@ -46,7 +46,7 @@ function Contact() {
 
   function getFieldClass(isValid, value) {
     const baseClass =
-      "w-full rounded-md border bg-black px-4 py-3 text-sm text-slate-50 placeholder:text-slate-600 outline-none transition";
+      "w-full rounded-md border border-slate-800 bg-black px-4 py-2 text-sm text-slate-50 placeholder:text-slate-500 outline-none transition";
 
     if (value.length === 0) {
       return `${baseClass} border-slate-800 focus:border-red-500`;
@@ -85,12 +85,12 @@ function Contact() {
   return (
     <section
       id="contact-section"
-      className="relative overflow-hidden bg-slate-950 px-4 py-24 text-white sm:px-6"
+      className="relative overflow-hidden bg-slate-950 px-6 py-24 text-white"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(124,58,237,0.28),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(37,99,235,0.16),transparent_35%)]" />
 
       <div className="relative mx-auto max-w-6xl text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-200">
+        <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
           <Sparkles className="h-3 w-3" />
 
           <span>Start your AI journey</span>
@@ -98,7 +98,7 @@ function Contact() {
           <Sparkles className="h-3 w-3" />
         </div>
 
-        <h2 className="mx-auto mt-8 max-w-3xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+        <h2 className="mx-auto mt-8 max-w-3xl text-4xl font-black leading-none tracking-tight md:text-5xl lg:text-6xl">
           Ready to Explore
           <span className="block text-violet-300">
             Agentic AI?
@@ -150,7 +150,7 @@ function Contact() {
         <form
           onSubmit={handleSubmit}
           autoComplete="off"
-          className="mx-auto mt-16 max-w-2xl rounded-3xl border border-slate-800 bg-slate-950/80 p-6 text-left shadow-xl shadow-black/30 sm:p-8"
+          className="mx-auto mt-16 max-w-2xl rounded-3xl border border-slate-800 bg-slate-950 p-8 text-left shadow-xl shadow-slate-950/40"
         >
           <div>
             <label
