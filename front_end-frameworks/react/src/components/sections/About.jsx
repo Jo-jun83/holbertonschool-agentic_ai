@@ -1,23 +1,23 @@
 import { Sparkles } from "lucide-react";
 import steps from "../../data/steps";
+import SectionBadge from "../ui/SectionBadge";
+import SectionTitle from "../ui/SectionTitle";
 
 function About() {
   return (
     <section id="about-section" className="bg-black px-6 py-24 text-white">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
+          <SectionBadge>
             <Sparkles className="h-3 w-3" />
-
             <span>What is Agentic AI?</span>
-
             <Sparkles className="h-3 w-3" />
-          </div>
+          </SectionBadge>
 
-          <h2 className="mt-8 text-4xl leading-none font-black tracking-tight md:text-5xl">
-            AI that does more than answer
-            <span className="block text-violet-300">It acts with purpose</span>
-          </h2>
+          <SectionTitle
+            title="AI that does more than answer"
+            subtitle="It acts with purpose"
+          />
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-6 text-slate-300 md:text-base">
             Agentic AI refers to artificial intelligence systems designed to

@@ -1,18 +1,12 @@
 import { BrainCircuit } from "lucide-react";
+import Brand from "../ui/Brand";
+import Button from "../ui/Button";
 
 function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 w-full border-b border-slate-900 bg-slate-950/80 text-white backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#top" className="flex items-center gap-3">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40">
-            <BrainCircuit className="h-5 w-5 text-white" />
-          </div>
-
-          <span className="text-sm font-semibold whitespace-nowrap sm:text-base">
-            Agentic AI
-          </span>
-        </a>
+        <Brand />
 
         <div className="flex items-center gap-6">
           <nav aria-label="Main navigation" className="hidden md:block">
@@ -40,12 +34,9 @@ function Header() {
             </ul>
           </nav>
 
-          <a
-            href="#contact-section"
-            className="shrink-0 rounded-md bg-violet-500 px-3 py-2 text-sm font-semibold whitespace-nowrap shadow-lg shadow-violet-500/30 hover:bg-violet-600 sm:px-4"
-          >
+          <Button href="#contact-section" className="shrink-0 px-3 py-2 whitespace-nowrap sm:px-4">
             Enroll now
-          </a>
+          </Button>
         </div>
       </div>
     </header>

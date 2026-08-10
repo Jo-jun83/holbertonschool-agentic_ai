@@ -1,6 +1,8 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroStats from "../../data/heroStats";
 import StatCard from "../cards/StatCard";
+import SectionBadge from "../ui/SectionBadge";
+import Button from "../ui/Button";
 
 function Hero() {
   return (
@@ -12,11 +14,11 @@ function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.12)_1px,transparent_1px)] bg-[size:72px_72px] opacity-30" />
 
       <div className="relative mx-auto max-w-6xl text-center">
-        <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
+        <SectionBadge>
           <Sparkles className="h-3 w-3" />
           <span>The future of coding</span>
           <Sparkles className="h-3 w-3" />
-        </div>
+        </SectionBadge>
 
         <h1 className="mx-auto mt-8 max-w-4xl text-5xl leading-none font-black tracking-tight md:text-7xl">
           Build smarter workflows
@@ -29,20 +31,13 @@ function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
-          <a
-            href="#about-section"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-violet-500 px-6 py-3 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:bg-violet-600"
-          >
+          <Button href="#about-section" icon={<ArrowRight className="h-4 w-4" />}>
             Start learning with Holberton School
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          </Button>
 
-          <a
-            href="#features-section"
-            className="inline-flex items-center justify-center rounded-md border border-slate-700 bg-slate-950/70 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-violet-400 hover:text-white"
-          >
+          <Button href="#features-section" variant="secondary">
             Methodology
-          </a>
+          </Button>
         </div>
 
         <div className="mt-14 grid grid-cols-2 gap-8 md:grid-cols-4">

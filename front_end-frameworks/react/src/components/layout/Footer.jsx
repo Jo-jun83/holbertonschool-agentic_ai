@@ -1,4 +1,6 @@
 import { BrainCircuit } from "lucide-react";
+import Brand from "../ui/Brand";
+import SocialLink from "../ui/SocialLink";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,58 +10,23 @@ function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40">
-                <BrainCircuit className="h-4 w-4 text-white" />
-              </div>
-
-              <span className="text-sm font-bold">Agentic AI</span>
-            </div>
+            <Brand
+              size={32}
+              label="Agentic AI"
+              className=""
+              iconClassName="h-4 w-4"
+              containerClassName="rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40"
+            />
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-slate-500">
               Explore the future of development with Agentic AI.
             </p>
 
             <div className="mt-5 flex items-center gap-3">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
-                <i className="bi bi-instagram"></i>
-              </a>
-
-              <a
-                href="https://www.tiktok.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="TikTok"
-                className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
-                <i className="bi bi-tiktok"></i>
-              </a>
-
-              <a
-                href="https://x.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-                className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
-                <i className="bi bi-twitter-x"></i>
-              </a>
-
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
-                <i className="bi bi-youtube"></i>
-              </a>
+              <SocialLink href="https://www.instagram.com/" label="Instagram" icon={<i className="bi bi-instagram"></i>} />
+              <SocialLink href="https://www.tiktok.com/" label="TikTok" icon={<i className="bi bi-tiktok"></i>} />
+              <SocialLink href="https://x.com/" label="X" icon={<i className="bi bi-twitter-x"></i>} />
+              <SocialLink href="https://www.youtube.com/" label="YouTube" icon={<i className="bi bi-youtube"></i>} />
             </div>
           </div>
 

@@ -9,6 +9,8 @@ import {
   AtSign,
   Mail,
 } from "lucide-react";
+import SectionBadge from "../ui/SectionBadge";
+import Button from "../ui/Button";
 
 function Contact() {
   const initialForm = {
@@ -85,13 +87,11 @@ function Contact() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(124,58,237,0.28),transparent_40%),radial-gradient(circle_at_bottom_right,rgba(37,99,235,0.16),transparent_35%)]" />
 
       <div className="relative mx-auto max-w-6xl text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-300">
+        <SectionBadge>
           <Sparkles className="h-3 w-3" />
-
           <span>Start your AI journey</span>
-
           <Sparkles className="h-3 w-3" />
-        </div>
+        </SectionBadge>
 
         <h2 className="mx-auto mt-8 max-w-3xl text-4xl leading-none font-black tracking-tight md:text-5xl lg:text-6xl">
           Ready to Explore
@@ -99,22 +99,18 @@ function Contact() {
         </h2>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
+          <Button
             href="https://www.holbertonschool.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-md bg-violet-500 px-6 py-3 text-sm font-semibold shadow-lg shadow-violet-500/30 transition hover:bg-violet-600"
+            icon={<ArrowRight className="h-4 w-4" />}
           >
             Enroll at Holberton School
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          </Button>
 
-          <a
-            href="#about-section"
-            className="inline-flex items-center justify-center rounded-md border border-slate-700 bg-slate-950/70 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-violet-400 hover:text-white"
-          >
+          <Button href="#about-section" variant="secondary">
             Need more information?
-          </a>
+          </Button>
         </div>
 
         <div className="mx-auto mt-10 flex max-w-3xl flex-col items-center gap-6 text-slate-500 md:flex-row md:justify-center md:gap-10">

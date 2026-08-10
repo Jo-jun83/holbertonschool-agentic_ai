@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
 import InsightCard from "../cards/InsightCard";
-
 import { getInsights } from "../../services/insightsService.js";
+import SectionBadge from "../ui/SectionBadge";
+import SectionTitle from "../ui/SectionTitle";
 
 function Insights() {
   const [insights, setInsights] = useState([]);
@@ -29,20 +30,17 @@ function Insights() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-xs text-violet-200">
+          <SectionBadge>
             <Sparkles className="h-3 w-3" />
-
             <span>Insights</span>
-
             <Sparkles className="h-3 w-3" />
-          </div>
+          </SectionBadge>
 
-          <h2 className="mt-8 text-4xl leading-tight font-black tracking-tight sm:text-5xl">
-            Explore Agentic AI
-            <span className="block text-violet-300">
-              Through real-world scenes
-            </span>
-          </h2>
+          <SectionTitle
+            title="Explore Agentic AI"
+            subtitle="Through real-world scenes"
+            className="sm:text-5xl"
+          />
         </div>
 
         {error && (
