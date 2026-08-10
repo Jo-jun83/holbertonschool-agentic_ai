@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
     "format": "prettier .  --write",
     "deploy": "npm run build && gh-pages -d dist --dest front_end-frameworks/vue"
   },
