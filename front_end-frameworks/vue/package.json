@@ -1,0 +1,30 @@
+{
+  "name": "vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write",
+    "deploy": "npm run build && gh-pages -d dist --dest front_end-frameworks/vue"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.31.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.40"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "eslint": "^10.8.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.10.0",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.9.0",
+    "vite": "^8.2.0"
+  }
+}
