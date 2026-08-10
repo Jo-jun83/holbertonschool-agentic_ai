@@ -1,5 +1,4 @@
 <script setup>
-import { BrainCircuit } from '@lucide/vue'
 import Brand from "../ui/Brand.vue";
 import Button from "../ui/Button.vue";
 </script>

@@ -4,6 +4,10 @@ import globals from 'globals'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default [
+  {
+    ignores: ['dist/**'],
+  },
+
   js.configs.recommended,
 
   ...pluginVue.configs['flat/recommended'],
@@ -17,7 +21,9 @@ export default [
       },
     },
 
-    rules: {},
+    rules: {
+      'vue/multi-word-component-names': 'off',
+    },
   },
 
   eslintConfigPrettier,

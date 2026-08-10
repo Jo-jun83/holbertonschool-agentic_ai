@@ -1,5 +1,4 @@
 <script setup>
-import { BrainCircuit } from '@lucide/vue'
 const currentYear = new Date().getFullYear()
 import Brand from "../ui/Brand.vue";
 import SocialLink from "../ui/SocialLink.vue";
@@ -15,8 +14,8 @@ import SocialLink from "../ui/SocialLink.vue";
             :size="32"
             label="Agentic AI"
             class=""
-            iconClass="h-4 w-4"
-            containerClass="rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40"
+            icon-class="h-4 w-4"
+            container-class="rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40"
             />
 
             <p class="mt-4 max-w-xs text-sm leading-6 text-slate-500">
