@@ -1,5 +1,9 @@
 <script setup>
 import { BrainCircuit } from '@lucide/vue'
+const currentYear = new Date().getFullYear()
+import Brand from "../ui/Brand.vue";
+import SocialLink from "../ui/SocialLink.vue";
+
 </script>
 
 <template>
@@ -7,58 +11,34 @@ import { BrainCircuit } from '@lucide/vue'
       <div class="mx-auto max-w-6xl">
         <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div class="flex items-center gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40">
-                <BrainCircuit class="h-4 w-4 text-white" />
-              </div>
-
-              <span class="text-sm font-bold">Agentic AI</span>
-            </div>
+            <Brand
+            :size="32"
+            label="Agentic AI"
+            class=""
+            iconClass="h-4 w-4"
+            containerClass="rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40"
+            />
 
             <p class="mt-4 max-w-xs text-sm leading-6 text-slate-500">
               Explore the future of development with Agentic AI.
             </p>
 
             <div class="mt-5 flex items-center gap-3">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                class="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
+            <SocialLink href="https://www.instagram.com/" label="Instagram">
                 <i class="bi bi-instagram"></i>
-              </a>
+            </SocialLink>
 
-              <a
-                href="https://www.tiktok.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="TikTok"
-                class="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
+            <SocialLink href="https://www.tiktok.com/" label="TikTok">
                 <i class="bi bi-tiktok"></i>
-              </a>
+            </SocialLink>
 
-              <a
-                href="https://x.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-                class="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
+            <SocialLink href="https://x.com/" label="X">
                 <i class="bi bi-twitter-x"></i>
-              </a>
+            </SocialLink>
 
-              <a
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                class="flex h-9 w-9 items-center justify-center rounded-md border border-slate-800 text-slate-300 transition hover:border-violet-500 hover:text-violet-400"
-              >
+            <SocialLink href="https://www.youtube.com/" label="YouTube">
                 <i class="bi bi-youtube"></i>
-              </a>
+            </SocialLink>
             </div>
           </div>
 
@@ -178,7 +158,7 @@ import { BrainCircuit } from '@lucide/vue'
         </div>
 
         <div class="mt-14 flex flex-col gap-4 border-t border-slate-900 pt-6 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
-          <p>© {currentYear} Jungling Jonas</p>
+          <p>© {{currentYear}} Jungling Jonas</p>
 
           <p>Built for the Holberton School Front-end Frameworks curriculum.</p>
         </div>

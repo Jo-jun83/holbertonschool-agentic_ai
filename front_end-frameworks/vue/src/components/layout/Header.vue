@@ -1,5 +1,7 @@
 <script setup>
 import { BrainCircuit } from '@lucide/vue'
+import Brand from "../ui/Brand.vue";
+import Button from "../ui/Button.vue";
 </script>
 
 <template>
@@ -7,17 +9,9 @@ import { BrainCircuit } from '@lucide/vue'
     <div
       class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6"
     >
-      <a href="#hero-section" class="flex items-center gap-3">
-        <div
-          class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-violet-500 shadow-lg shadow-violet-500/40"
-        >
-          <BrainCircuit class="h-5 w-5 text-white" />
-        </div>
-
-        <span class="whitespace-nowrap text-sm font-semibold sm:text-base">
-          Agentic AI
-        </span>
-      </a>
+      <Brand>
+        Agentic AI
+      </Brand >
 
       <div class="flex items-center gap-6">
         <nav aria-label="Main navigation" class="hidden md:block">
@@ -48,12 +42,9 @@ import { BrainCircuit } from '@lucide/vue'
           </ul>
         </nav>
 
-        <a
-          href="#contact-section"
-          class="shrink-0 whitespace-nowrap rounded-md bg-violet-500 px-3 py-2 text-sm font-semibold shadow-lg shadow-violet-500/30 hover:bg-violet-600 sm:px-4"
-        >
-          Enroll now
-        </a>
+        <Button href="#contact-section" class="shrink-0 px-3 py-2 whitespace-nowrap sm:px-4">
+            Enroll now
+        </Button>
       </div>
     </div>
   </header>
