@@ -1,8 +1,8 @@
 <script setup>
-import { Sparkles } from '@lucide/vue';
-import steps from "../../data/steps";
-import SectionBadge from "../ui/SectionBadge.vue";
-import SectionTitle from "../ui/SectionTitle.vue";
+  import { Sparkles } from '@lucide/vue';
+  import steps from "../../data/steps";
+  import SectionBadge from "../ui/SectionBadge.vue";
+  import SectionTitle from "../ui/SectionTitle.vue";
 </script>
 
 <template>
