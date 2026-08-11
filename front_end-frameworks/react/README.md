@@ -1,16 +1,47 @@
-# React + Vite
+# React - Landing page Agentic AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cette partie du projet contient une implémentation de la landing page en React avec Vite.
 
-Currently, two official plugins are available:
+## Présentation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Cette version reproduit une interface moderne et responsive centrée sur les thématiques de l’Agentic AI. Elle met en avant des sections comme le hero, les fonctionnalités, les insights et un formulaire de contact.
 
-## React Compiler
+## Fonctionnalités principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- interface moderne avec Tailwind CSS
+- composants réutilisables
+- rendu dynamique à partir de données locales
+- formulaire de contact avec validation côté client
+- structure modulaire par sections
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd front_end-frameworks/react
+npm install
+```
+
+## Lancer le projet
+
+```bash
+npm run dev
+```
+
+## Scripts disponibles
+
+- npm run dev : démarre le serveur de développement Vite
+- npm run build : construit l’application pour la production
+- npm run preview : prévisualise la build
+- npm run lint : exécute ESLint
+- npm run deploy : build + déploiement sur GitHub Pages
+
+## Structure du projet
+
+- src/App.jsx : composant principal
+- src/components/ : composants de l’interface
+- src/data/ : données statiques utilisées par l’application
+- src/services/ : services ou logique liée aux données
+
+## Notes
+
+Cette version illustre une approche React basée sur des composants fonctionnels et JSX, avec un état local géré via React.
