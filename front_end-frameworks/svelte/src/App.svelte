@@ -1,9 +1,6 @@
 <script>
-  import Eye from '@lucide/svelte/icons/eye';
+  import Header from "./components/layout/Header.svelte";
+
 </script>
 
-<section id="center" class="flex flex-col items-center">
-  <h1>Svelte</h1>
-  <h2>Introduction to Svelte</h2>
-  <Eye />
-</section>
+<Header />
