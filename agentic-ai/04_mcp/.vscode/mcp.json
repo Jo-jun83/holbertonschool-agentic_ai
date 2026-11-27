@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "crm-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:/Doc_Local/Spé Agentic IA/holbertonschool-agentic_ai/agentic-ai/04_mcp/mcp_server.js"
+      ]
+    }
+  }
+}
